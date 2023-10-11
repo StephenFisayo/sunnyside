@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan-graphic-text: #25564b;
+    --Dark-blue-photography-text: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+a{
+    text-decoration: none;
+    color: var(--Grayish-blue);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+
+.navcreate{
+    /* background-image: url(./images/mobile/image-header.jpg);
+    width: 100vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5.33vw 6vw;
+    
+ }
+
+.navigate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+ .mobile{
+     display: flex;
+     width: 88vw;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 18vw;
+ }
+
+ .closebtn img{
+     filter: invert(46) brightness(100);
+ }
+ 
+ .links{
+    width: 88vw;
+    text-align: center;
+    z-index: 1;
+    transition: all linear 1.2s;
+    position: absolute;
+    top: 12vw;
+    height: 0;
+    overflow: hidden;
+}
+
+ 
+ .show-links{
+     height: 95.4vw;
+ }
+ 
+ 
+ 
+ .triangle{
+     width: 0;
+     border-left: 5.333vw solid transparent;
+     border-bottom: 5.333vw solid white;
+     position: relative;
+     right: -83vw;
+ }
+ 
+ 
+ .img-header img{
+    position: relative;
+    z-index: -1;
+}
+ 
+ 
+ button{
+     text-transform: uppercase;
+     border: 0px solid black;
+     padding: 15px 40px;
+     border-radius: 40px;
+     color: var(--Very-dark-desaturated-blue);
+     background-color: var(--Yellow);
+     font-weight: 800;
+     font-size: 4.8vw;
+ }
+ 
+ ul{
+     padding: 10.67vw 0px 1.33vw 0px;
+     background-color: white;
+ }
+ 
+ .we{
+     margin-bottom: 9vw;
+     font-size: 15vw;
+     line-height: 18vw;
+     color: var(--White);
+ }
+ 
+ li{
+     text-decoration: none;
+     list-style: none;
+     margin-bottom: 10.67vw;
+     font-weight: 600;
+     font-size: 4.8vw;
+ }
+ 
+ .creatives{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ 
+.creatives img{
+    width: 9vw;
+}
+
+.words{
+    margin: 17.33vw 8vw 17.33vw 8vw ;
+    text-align: center;
+    justify-content: center;
+}
+
+.word-paragraph, .word-heading{
+    margin-bottom: 8vw;
+}
+
+.word-heading{
+    font-size: 8.6vw;
+}
+
+.word-paragraph{
+    font-size: 4vw;
+}
+
+.learn-more{
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+
+.graphics, .photography{
+    position: absolute;
+    top: 64%;
+    text-align: center;
+    margin: 0px 4vw;
+}
+
+.third-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.graphics h1, .photography h1{
+    font-size: 9vw;
+}
+
+.graphics p, .photography p{
+    font-size: 3.8vw;
+    margin-top: 5.33vw;
+}
+
+.graphics{
+    color: var(--Dark-desaturated-cyan-graphic-text);
+}
+
+.photography{
+    color: var(--Dark-blue-photography-text);
+}
+
+.orange, .apple{
+    position: relative;
+    z-index: -1;
+}
+
+.fourth-row{
+    text-align: center;
+    margin: 60px 6vw;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.fourth-row h2{
+    font-size: 7vw;
+    margin-bottom: 16vw;
+}
+
+.fourth-row p{
+    font-size: 3.9vw;
+}
+
+.Emily img, .Thomas img, .Jennie img{
+    width: 25%;
+    margin-bottom: 5.33vw;
+    border-radius: 50%;
+}
+
+.Emily p, .Thomas p, .Jennie p{
+    margin-bottom: 15px;
+}
+
+.Persons{
+    color: var(--Very-dark-desaturated-blue);
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 1.867vw;
+    font-size: 5vw;
+}
+
+.Emily .role , .Thomas .role{
+    margin-bottom: 18.67vw;
+}
+
+.role{
+    font-size: 3vw;
+}
+
+
+.mobile-fifth-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.footer{
+    background-color: hsla(168, 34%, 41%, 0.5);
+    padding: 16vw 10vw 10.67vw 10vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    margin-bottom: 10.67vw;
+}
+
+.footer li{
+    font-size: 4vw;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8vw;
+    width: 80vw;
+    color: var(--Dark-desaturated-cyan-graphic-text);
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55vw;
+    margin-bottom: 10.67vw;
+}
+
+.social img{
+    max-width: 20%;
+}
+
+.desktop-fifth-row, .dimg-header, .dTransform, .dstand-out, .dorange-img, .dapple-img{
+    display: none;
+}
+
+
+
+@media screen and (min-width:500px) {
+    .footer li{
+        font-size: 2.7vw;
+    }
+
+}
+
+
+@media screen and (min-width:700px) {
+    
+    .closebtn{
+        display: none;
+    }
+
+    .navcreate{
+        display: flex;
+        flex-direction: column;
+        /* background-color: wheat; */
+        margin: 2vw 3vw;
+        position: absolute;
+    }
+
+    .navigate{
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        justify-content: space-between;
+        margin-bottom: 10vw;
+        width: 94vw;
+    }
+
+    .mobile{
+        display: flex;
+        align-items: center;
+        width: 20vw;
+        margin-bottom: 0;
+    }
+
+    .triangle{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px;
+        background-color: transparent;
+        
+    }
+
+    .links{
+        visibility: visible;
+        height: auto;
+        position: relative;
+        top: -5px;
+        width: 45vw;
+        right: -5vw;
+        transition: none;
+        z-index: 0;
+    }
+
+    li{
+        margin-bottom: 0px;
+    }
+
+    .links li{
+        font-size: 1.6vw;
+        color: white;
+    }
+
+    button{
+        padding: 15px 40px;
+        font-size: 1.3vw;
+        background-color: var(--White);
+    }
+
+    .we{
+        font-size: 5vw;
+        margin-bottom: 7vw;
+        line-height: 0px;
+    }
+
+    .creatives img{
+        width: 2.9vw;
+    }
+
+    img.dTransform, img.dstand-out{
+        width: 50%;
+    }
+
+    .desktop-fifth-row, .dimg-header, .dTransform, .dstand-out, .dorange-img, .dapple-img{
+        display: block;
+    }
+
+    .mobile-fifth-row, .img-header, .Transform, .stand-out, .apple-img, .orange-img{
+        display: none;
+    }
+
+    .transform-brand{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .learn-more{
+        font-size: 1.9vw;
+    }
+
+    .second-row{
+        display: flex;
+        align-items: center;
+    }
+
+    .words{
+        margin: 0px 10vw 0px 10vw;
+        text-align: left;
+    }
+
+    .word-heading{
+        font-size: 3.6vw;
+        margin-bottom: 2vw;
+        line-height: 4vw;
+    }
+
+    .word-paragraph{
+        font-size: 1.2vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .third-row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .graphics, .photography{
+        position: absolute;
+        top: 62%;
+        text-align: center;
+        margin: 0px 8vw;
+    }
+
+    .graphics h1, .photography h1{
+        font-size: 2vw;
+    }
+
+    .graphics p, .photography p{
+        font-size: 1.4vw;
+        margin-top: 1.5vw;
+    }
+
+    .fourth-row{
+        display: flex;
+        flex-direction: column;
+        margin: 10vw 6vw;
+    }
+
+    .fourth-row h2{
+        font-size: 4vw;
+        margin-bottom: 5vw;
+    }
+
+    .Officers{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Persons{
+        font-size: 2.5vw;
+        margin-bottom: 0.6vw;
+    }
+    
+    .Emily p, .Thomas p, .Jennie p{
+        margin-bottom: 2.9vw;
+        font-size: 1.5vw;
+    }
+
+    .Emily{
+        margin-right: 2vw;
+    }
+
+    .Jennie{
+        margin-left: 2vw;
+    }
+
+    .Emily img, .Thomas img, .Jennie img{
+        width: 8vw;
+        margin-bottom: 2.6vw;
+    }
+
+    .Emily .role , .Thomas .role{
+        margin-bottom: 0px;
+    }
+
+    .role{
+        font-size: 1.2vw;
+    }
+
+    .desktop-fifth-row{
+        display: flex;
+        overflow-x: hidden;
+    }
+
+    .desktop-fifth-row img{
+        max-width: 25vw;
+    }
+    
+    .footer{
+        background-color: hsla(168, 34%, 41%, 0.5);
+        padding: 8.9vw 30vw 5vw 30vw;
+    }
+
+    .footer-logo{
+        margin-bottom: 5.33vw;
+    }
+
+    .footer-list{
+        width: 38vw;
+        margin-bottom: 6vw;
+    }
+
+    .footer li{
+        font-size: 2.6vw;
+    }
+    
+    .social{
+        width: 20vw;
+        margin-bottom: 5vw;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .fourth-row h2{
+        font-size: 2.7vw;
+    }
+
+    .links{
+        width: 35vw;
+        right: -15vw;
+    }
+
+    .links li{
+        font-size: 1.2vw;
+    }
+
+    button{
+        font-size: 1vw;
+    }
+
+    .fourth-row p{
+        font-size: 1.2vw;
+    }
+
+    .Persons{
+        font-size: 1.9vw;
+    }
+
+    .role{
+        font-size: 1vw;
+    }
+
+    .footer{
+        padding: 6.9vw 30vw 4vw 30vw;
+    }
+
+    .footer li{
+        font-size: 1.7vw;
+    }
+
+    img.footer-logo{
+        margin-bottom: 6vw;
+    }
+
+    img.footer-logo{
+        width: 40%;
+    }
+}
+
+
